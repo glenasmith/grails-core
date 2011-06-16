@@ -719,9 +719,9 @@ class RenderTagLib implements RequestConstants {
                 def trace = errorPrinter.prettyPrint(exception.cause ?: exception)
                 if(StringUtils.hasText(trace.trim())) {
                     currentOut << "<h2>Trace</h2>"
-                    currentOut << '<div class="stack"><pre>'
+                    currentOut << '<pre class="stack">'
                     currentOut << trace.encodeAsHTML()
-                    currentOut << '</pre></div>'
+                    currentOut << '</pre>'
                 }
 
             }
