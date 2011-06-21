@@ -700,7 +700,7 @@ class RenderTagLib implements RequestConstants {
         }
 
         def currentOut = out
-        currentOut << """<h2>Error ${prettyPrintStatus(request.'javax.servlet.error.status_code')}</h2>
+        currentOut << """<h1>Error ${prettyPrintStatus(request.'javax.servlet.error.status_code')}</h1>
 <dl class="error-details">
 <dt>URI</dt><dd>${request.forwardURI ?: request.'javax.servlet.error.request_uri'}</dd>
 """
